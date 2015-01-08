@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./go selenium-server-standalone
