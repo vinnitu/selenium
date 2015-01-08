@@ -64,6 +64,7 @@ import org.openqa.selenium.remote.server.handler.GetElementLocation;
 import org.openqa.selenium.remote.server.handler.GetElementLocationInView;
 import org.openqa.selenium.remote.server.handler.GetElementSelected;
 import org.openqa.selenium.remote.server.handler.GetElementSize;
+import org.openqa.selenium.remote.server.handler.GetElementScreenshot;
 import org.openqa.selenium.remote.server.handler.GetElementText;
 import org.openqa.selenium.remote.server.handler.GetLogHandler;
 import org.openqa.selenium.remote.server.handler.GetPageSource;
@@ -241,6 +242,7 @@ public class JsonHttpCommandHandler {
     addNewMapping(GET_ELEMENT_LOCATION, GetElementLocation.class);
     addNewMapping(GET_ELEMENT_LOCATION_ONCE_SCROLLED_INTO_VIEW, GetElementLocationInView.class);
     addNewMapping(GET_ELEMENT_SIZE, GetElementSize.class);
+    addNewMapping(GET_ELEMENT_SCREENSHOT, GetElementScreenshot.class);
     addNewMapping(GET_ELEMENT_VALUE_OF_CSS_PROPERTY, GetCssProperty.class);
 
     addNewMapping(GET_ELEMENT_ATTRIBUTE, GetElementAttribute.class);
